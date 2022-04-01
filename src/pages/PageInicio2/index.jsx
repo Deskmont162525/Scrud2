@@ -66,10 +66,47 @@ const dataCurso = [
           'https://st2.depositphotos.com/43673054/42963/v/1600/depositphotos_429633430-stock-illustration-deadpool-weapon.jpg',
     },
   ]
-const PageInicio = () => {
+const PageInicio2 = () => {
   return (
     <>
-      <Menu />  
+      <Menu />
+      <section className="page-section bg-light" id="team">
+        <div className="container">
+          <div className="text-center">
+            <h2 className="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 className="section-subheading text-muted">
+              Lorem ipsum dolor sit amet consectetur.
+            </h3>
+          </div>
+          <div className="row">
+            {dataEmprende?.map((e, i) => {
+              return (
+                <CardEmp
+                  key={i}
+                  nombre={e.nombre}
+                  descripcion={e.descripcion}
+                  profesion={e.profesion}
+                  redes1={e.redes1}
+                  redes2={e.redes2}
+                  redes3={e.redes3}
+                  url_imagen={e.url_imagen}
+                />
+              )
+            })}
+          </div>
+          <div className="row">
+            <div className="col-lg-8 mx-auto text-center">
+              <p className="large text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                eaque, laboriosam veritatis, quos non quis ad perspiciatis,
+                totam corporis ea, alias ut unde.
+              </p>
+              <a className="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
@@ -101,4 +138,4 @@ const PageInicio = () => {
   )
 }
 
-export default PageInicio
+export default PageInicio2
