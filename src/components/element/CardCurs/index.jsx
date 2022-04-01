@@ -1,4 +1,12 @@
-const CardCurs = () => {
+const CardCurs = ({
+  nombre,
+  descripcion,
+  subtitulos,
+  responsable,
+  categoria,
+  url_curso,
+  url_imagen,
+}) => {
   return (
     <div className="col-lg-4 col-sm-6 mb-4">
       <div className="portfolio-item">
@@ -12,11 +20,11 @@ const CardCurs = () => {
               <i className="fas fa-plus fa-3x"></i>
             </div>
           </div>
-          <img className="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+          <img className="img-fluid" src={url_imagen} alt="..." />
         </a>
         <div className="portfolio-caption">
-          <div className="portfolio-caption-heading">Finish</div>
-          <div className="portfolio-caption-subheading text-muted">Identity</div>
+          <div className="portfolio-caption-heading">{nombre}</div>
+          <div className="portfolio-caption-subheading text-muted">{subtitulos}</div>
         </div>
       </div>
     </div>
