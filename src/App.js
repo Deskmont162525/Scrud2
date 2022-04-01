@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import './App.css';
+import './assets/css/stylesGlobal.css'
+import PageAdmin from './pages/Admin';
+import PageInicio from './pages/PageInicio';
+import { getAllLeads } from './actions/gettAll';
 
 function App() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getAllLeads());
+  }, [dispatch]);
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <Route >
+     <Switch>
+     <Route exact path="/" component={PageInicio}>
+
+     </Route>
+     </Switch>
+     <Switch>
+     <Route exact path="/admin" component={PageAdmin}>
+
+     </Route>
+     </Switch>
+     </Route>
+     </div>
+    </BrowserRouter>
+    
   );
 }
 

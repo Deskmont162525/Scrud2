@@ -1,0 +1,264 @@
+.titleBtnEvents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleBtnEvents .ctaTwo .cta {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    width: 164px;
+    height: 56px;
+    font-family: 'bmw-bold';
+    font-size: 0.875rem;
+    line-height: 43px;
+    color: hsl(0, 0%, 15%);
+    margin-left: 30px;
+  }
+  
+  .titleBtnEvents .ctaTwo .cta:hover {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 15%);
+  }
+  
+  .titleBtnEvents .ctaTwo {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 15%);
+  }
+  
+  .titleBtnEvents .ctaTwo .cta:active {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 15%);
+  }
+
+.titleBtnEvents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleBtnEvents .ctaTwo .cta {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    width: 164px;
+    height: 56px;
+    font-family: 'bmw-bold';
+    font-size: 0.875rem;
+    line-height: 43px;
+    color: hsl(0, 0%, 15%);
+    margin-left: 30px;
+}
+
+.titleBtnEvents .ctaTwo .cta:hover {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 15%);
+}
+
+.titleBtnEvents .ctaTwo .cta:focus {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 15%);
+}
+
+.titleBtnEvents .ctaTwo .cta:active {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 15%);
+}
+
+.formProOne {
+    width: 100%;
+    margin: auto;
+    max-width: 556px;
+}
+
+.addDiscountCode {
+    text-align: center;
+}
+
+.addDiscountCode .cta {
+    width: 100%;
+    font-family: 'bmw-bold';
+    border: 2px solid hsl(216, 77%, 47%);
+    background-color: transparent;
+    color: hsl(216, 77%, 47%);
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    height: 56px;
+    line-height: 32px;
+  }
+
+  .addDiscountCode .cta:hover,
+  .addDiscountCode .cta:active {
+    border: 2px solid hsl(216, 77%, 47%);
+    background-color: hsl(216, 77%, 47%);
+    color: hsl(0, 0%, 100%);
+  }
+
+.saveChanges {
+    text-align: center;
+}
+
+.saveChanges .cta {
+    width: 100%;
+    font-family: 'bmw-bold';
+    border: 2px solid hsl(216, 77%, 47%);
+    background-color: hsl(216, 77%, 47%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    height: 56px;
+    line-height: 32px;
+  }
+
+  .saveChanges .cta:hover,
+  .saveChanges .cta:active {
+    border: 2px solid hsl(216, 77%, 47%);
+    background-color: hsl(216, 77%, 47%);
+    color: hsl(0, 0%, 100%);
+  }
+
+.boxEntradaVip {
+    width: 100%;
+    background-color: hsl(217, 100%, 96%);
+    border: 1px solid rgba(28, 105, 212, 0.2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 1.25rem 2.188rem;
+}
+
+.boxEntradaVip .titleVIP {
+    font-size: 0.938rem;
+    line-height: 20px;
+    color: hsl(0, 0%, 15%);
+    font-family: 'bmw-bold';
+}
+
+.boxEntradaVip ul {
+    padding-left: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.boxEntradaVip ul li {
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: hsl(0, 0%, 15%);
+}
+
+.boxEntradaVip .removeEdit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 90px;
+    position: relative;
+    top: 8px;
+}
+
+.boxEntradaVip .editRemove {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.boxEntradaVip .editRemove img {
+    width: 24px;
+    margin-right: 6px;
+}
+
+.boxEntradaVip .editRemove p {
+    font-family: 'bmw-bold';
+    font-size: 0.875rem;
+    line-height: 19px;
+    color: hsl(215, 77%, 47%);
+    margin-bottom: 0;
+}
+
+.removeEdit a:hover {
+    text-decoration: underline;
+}
+
+.formProOne .copyUrl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.formProOne .copyUrl .form-group {
+    width: 80%;
+    margin-right: 30px;
+}
+
+.formProOne .copyUrl input {
+    height: 40px;
+    background: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 73%);
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.formProOne .copyUrl input::placeholder {
+    font-family: "bmw-light";
+    font-size: 0.938rem;
+    color: hsl(0, 0%, 15%);
+}
+
+.formProOne .copyUrl .cta {
+    width: 114px;
+    height: 40px;
+    font-family: "bmw-bold";
+    font-size: 0.938rem;
+    background-color: hsl(215, 77%, 47%, 0.1);
+    color: hsl(215, 77%, 47%);
+    border-radius: 6px;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.formProOne .copyUrl .cta:hover {
+    background-color: hsl(215, 77%, 47%, 0.1);
+    color: hsl(215, 77%, 47%);
+}
+
+.formProOne .copyUrl .cta:active {
+    background-color: hsl(215, 77%, 47%, 0.1);
+    color: hsl(215, 77%, 47%);
+}
+
+.formProOne .copyUrl .cta:focus {
+    background-color: hsl(215, 77%, 47%, 0.1);
+    color: hsl(215, 77%, 47%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
