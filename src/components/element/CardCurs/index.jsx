@@ -1,3 +1,4 @@
+import logo from '../../../assets/img/close-icon.svg'
 const CardCurs = ({
   nombre,
   descripcion,
@@ -30,10 +31,10 @@ const CardCurs = ({
         </div>
       </div>
     </div>
-      <div className="portfolio-modal modal fade" id={`#portfolioModal${id}`} tabindex={`-${id}`} role="dialog" aria-hidden="true">
+      <div className="portfolio-modal modal fade" id={`portfolioModal${id}`} tabindex={`-${id}`} role="dialog" aria-hidden="true">
             <div className="modal-dialog">
                 <div className="modal-content">
-                    <div className="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div className="close-modal" data-bs-dismiss="modal"><img src={logo} alt="Close modal" /></div>
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
