@@ -6,6 +6,7 @@ const CardCurs = ({
   categoria,
   url_curso,
   url_imagen,
+  id,
 }) => {
   return (
       <>
@@ -14,7 +15,7 @@ const CardCurs = ({
         <a
           className="portfolio-link"
           data-bs-toggle="modal"
-        //   href={`#portfolioModal${}`}
+          href={`#portfolioModal${id}`}
         >
           <div className="portfolio-hover">
             <div className="portfolio-hover-content">
@@ -25,11 +26,11 @@ const CardCurs = ({
         </a>
         <div className="portfolio-caption">
           <div className="portfolio-caption-heading">{nombre}</div>
-          <div className="portfolio-caption-subheading text-muted">{subtitulos}</div>
+          <div className="portfolio-caption-subheading text-muted">{categoria}</div>
         </div>
       </div>
     </div>
-      <div className="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="portfolio-modal modal fade" id={`#portfolioModal${id}`} tabindex={`-${id}`} role="dialog" aria-hidden="true">
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -43,12 +44,12 @@ const CardCurs = ({
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul className="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Finish
+                                            <strong>Nombre:</strong>
+                                            {nombre}
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Identity
+                                            <strong>Categoria:</strong>
+                                            {categoria}
                                         </li>
                                     </ul>
                                     <button className="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">

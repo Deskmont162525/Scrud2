@@ -126,6 +126,7 @@ const PageInicio = () => {
                                 categoria={k.categoria}
                                 url_curso={k.url_curso}
                                 url_imagen={k.url_imagen}
+                                id={i}
                               />
                             )
                           })    
