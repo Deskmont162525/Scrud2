@@ -39,10 +39,10 @@ const CardCurs = ({
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <div className="modal-body">
-                                    <h2 className="text-uppercase">Project Name</h2>
-                                    <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img className="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 className="text-uppercase">{nombre}</h2>
+                                    <p className="item-intro text-muted">{subtitulos}</p>
+                                    <img className="img-fluid d-block mx-auto" src={url_imagen} alt="..." />
+                                    <p>{descripcion}</p>
                                     <ul className="list-inline">
                                         <li>
                                             <strong>Nombre:</strong>
