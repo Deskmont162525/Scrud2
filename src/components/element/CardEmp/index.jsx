@@ -5,6 +5,7 @@ const CardEmp = ({
   redes1,
   redes2,
   redes3,
+  redes4,
   url_imagen,
 }) => {
   return (
@@ -38,6 +39,15 @@ const CardEmp = ({
           aria-label="Parveen Anand LinkedIn Profile"
         >
           <i className="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          className="btn btn-dark btn-social mx-2"
+          // href={`https://api.whatsapp.com/send?phone=${redes4}&text=hola,%20me%20contacto%20contigo%20por%20medio%20del%20aplicativo%20web?`}
+          href={`https://api.whatsapp.com/send?phone=+57${redes4}&text=hola,%20me%20contacto%20contigo%20por%20medio%20del%20aplicativo%20web?`}
+          target='_blank'
+          aria-label="Parveen Anand whatsapp Profile"
+        >
+          <i className="fab fa-whatsapp"></i>
         </a>
       </div>
     </div>

@@ -7,7 +7,9 @@ const InputType = ({
   pattern,
   title,
   error,
-  textError
+  textError,
+  required,
+  accept,
 }) => {
   return (
     <div className="form-group mb-3">
@@ -20,9 +22,9 @@ const InputType = ({
         value={value}
         aria-describedby={name}
         onChange={handleChange}
-        required="required"
-        pattern={pattern}
+        required={required}
         title={title}
+        accept={accept}
       />
       {textError ? <div className="invalid-feedback">{textError}</div>
         : <div className="invalid-feedback">Campo obligatorio *</div>

@@ -1,23 +1,27 @@
-import React from 'react'
+import { useState } from 'react'
 import logo from '../../../assets/img/close-icon.svg'
-import FormInsCursEmpren from '../FormInsCursEm'
-const CardCurs = ({
+import CardEmp from '../CardEmp'
+import FormInsCurs from '../FormInsCurs'
+const CardCursP2 = ({
   nombre,
   descripcion,
   subtitulos,
   categoria,
   url_imagen,
   id,
-  confirm,
-  onSubmit,
-  error,
-  openFrom,
-  showForm,
-  onChangeInput,
-  stateFrom,
-  inputFile,
+  idI,
+  nombreI,
+  descripcionI,
+  profesionI,
+  redes1I,
+  redes2I,
+  redes3I,
+  redes4I,
+  url_imagenI,
   src,
 }) => {
+  const [openFrom, setOpenForm] = useState(false)
+  const showForm = () => setOpenForm(!openFrom)
   return (
     <>
       <div className="col-lg-4 col-sm-6 mb-4">
@@ -41,6 +45,23 @@ const CardCurs = ({
             </div>
           </div>
         </div>
+        <section className="page-section bg-light" id="team">
+          <div className="container">
+            <div className="row">
+              <CardEmp
+                key={idI}
+                nombre={nombreI}
+                descripcion={descripcionI}
+                profesion={profesionI}
+                redes1={redes1I}
+                redes2={redes2I}
+                redes3={redes3I}
+                redes4={redes4I}
+                url_imagen={url_imagenI}
+              />
+            </div>
+          </div>
+        </section>
       </div>
       <div
         className="portfolio-modal modal fade"
@@ -64,62 +85,37 @@ const CardCurs = ({
                     <p>{descripcion}</p>
                     <ul className="list-inline">
                       <li>
-                        <strong>Nombre:</strong>
+                        <strong>Nombre: </strong>
                         {nombre}
                       </li>
                       <li>
-                        <strong>Categoria:</strong>
+                        <strong>Nombre Investigador: </strong>
+                        {nombreI}
+                      </li>
+                      <li>
+                        <strong>Categoria: </strong>
                         {categoria}
                       </li>
                     </ul>
                     <div className="butunDetalle">
-                      <a className="btn btn-primary btn-xl " href="#">
+                      <a className="btn btn-primary " href="#">
                         Crowdfunding
                       </a>
                       <br />
+                      <button className="btn btn-primary " type="button">
+                        <i className="fas fa-xmark me-1"></i>
+                        Descarga pdf
+                      </button>
+                      <br />
                       <button
-                        className="btn btn-primary"
+                        className="btn btn-primary "
                         data-bs-dismiss="modal"
                         type="button"
                       >
                         <i className="fas fa-xmark me-1"></i>
                         Close Startup
                       </button>
-                      <br />
-                      <button className="btn btn-primary " type="button">
-                        Descarga pdf
-                      </button>
-                      <br />
-                      <button
-                        className="btn btn-primary "
-                        type="button"
-                        onClick={showForm}
-                      >
-                        !Inscríbete¡
-                      </button>
                     </div>
-                    {openFrom && (
-                      <FormInsCursEmpren
-                        state={stateFrom}
-                        onChangeInput={onChangeInput}
-                        onSubmit={onSubmit}
-                        error={error}
-                        inputFile={inputFile}
-                      />
-                      
-                    )}
-                    {confirm && (
-                      <div className="portfolio-caption">
-                        <br/>
-                        <div className="portfolio-caption-heading">
-                          REGISTRO CORRECTO
-                        </div>
-                        <div className="portfolio-caption-subheading text-muted">
-                          Gracias por tu registro, recibiras un correo con la
-                          información pertinente.
-                        </div>
-                      </div>
-                    )}
                   </div>
                 </div>
               </div>
@@ -131,4 +127,4 @@ const CardCurs = ({
   )
 }
 
-export default CardCurs
+export default CardCursP2
