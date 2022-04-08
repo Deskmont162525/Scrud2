@@ -133,7 +133,7 @@ const PageInicio2 = () => {
           </div>         
         </div>
       </section>
-      <Footer />
+      <Footer/>
     </>
   )
 }

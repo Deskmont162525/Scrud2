@@ -4,130 +4,10 @@ import Menu from '../../components/element/Menu'
 import CardArbol from '../../components/element/CardArbol'
 import { useState } from 'react'
 import { validarFormEmpren } from '../../actions/validarForm'
+import Footer from '../../components/element/Footer'
+import { dataCurso, dataEmprende } from '../../actions/objets'
 
-const dataEmprende = [
-  {
-    fecha: '2009-2011',
-    nombre: 'Antonio Foronda',
-    descripcion:
-      'Un emprendedor que supero todos sus miedos y ahora es el mejor en todo lo que se propone',
-    profesion: 'Programador Web Full Stack',
-    redes1: 'twiter',
-    redes2: 'face',
-    redes3: 'linkedin',
-    redes4: 'whatssap',
-    url_imagen:
-      'https://www.rutanmedellin.org/images/1pruebas/foto-persona.jpg',
-  },
-  {
-    fecha: '2009-2020',
-    nombre: 'Michel Carmona',
-    descripcion: 'Persona creativa responsable con iniciativa Quiso superar su lentitud para toma de desiciones y gracias a nuestros cursos lo ha logrado.',
-    profesion: 'Preogramadora Full Stack',
-    redes1: 'twiter',
-    redes2: 'face',
-    redes3: 'linkedin',
-    redes4: 'whatssap',
-    url_imagen:
-      'https://us.123rf.com/450wm/leungchopan/leungchopan1503/leungchopan150300977/37362478-retrato-de-hombre-asi%C3%A1tico.jpg?ver=6',
-  },
-  {
-    fecha: '2009-2021',
-    nombre: 'Mario Sanchez',
-    descripcion: 'Persona con iniciativa conviccion y con ideas firmes Para lo cual quiso tomar nuestro curso de emprendimiento y esta full.',
-    profesion: 'Preogramadora full stack',
-    redes1: 'twiter',
-    redes2: 'face',
-    redes3: 'linkedin',
-    redes4: 'whatssap',
-    url_imagen:
-      'https://cdn.pixabay.com/photo/2016/01/17/14/23/albert-einstein-1144965_960_720.jpg',
-  },
-  {
-    fecha: '2009-2011',
-    nombre: 'Agregado para prueba',
-    descripcion:
-      'Un emprendedor que supero todos sus miedos y ahora es el mejor en todo lo que se propone',
-    profesion: 'Programador Web Full Stack',
-    redes1: 'twiter',
-    redes2: 'face',
-    redes3: 'linkedin',
-    redes4: 'whatssap',
-    url_imagen:
-      'https://www.rutanmedellin.org/images/1pruebas/foto-persona.jpg',
-  },
-]
-const dataCurso = [
-  {
-    src:'https://www.youtube.com/embed/VeZyaqM5ugw',
-    nombre: 'Aceleracion de Empresas',
-    subtitulos: 'Startup',
-    descripcion:
-      'Aprende a poner tus ideas en marcha',
-    categoria: 'Curso de emprendimiento 2',
-    url_curso: 'https://www.youtube.com/watch?v=DAdRO6ByBoU',
-    url_imagen:
-      'https://cdn.pixabay.com/photo/2017/02/01/09/31/arrows-2029160_960_720.png',
-    investigador: {
-      nombre: 'Michel Carmona',
-      descripcion: 'Un emprendedor',
-      profesion: 'Preogramador full stack',
-      redes1: 'twiter',
-      redes2: 'face',
-      redes3: 'linkedin',
-      redes4: 'whatssap',
-      url_imagen:
-        'https://www.rutanmedellin.org/images/1pruebas/foto-persona.jpg',
-    },
-  },
-  
-  {
-    src:'https://www.youtube.com/embed/JwywjDlxtSI',
-    nombre: 'Que es y como funciona el startup',
-    subtitulos: 'Definicion de Startup',
-    descripcion:
-      'Ingresa en este mundo de los nuevos negocios',
 
-    categoria: 'Informativo',
-    url_curso: 'https://www.youtube.com/watch?v=DAdRO6ByBoU',
-    url_imagen:
-      'https://cdn.pixabay.com/photo/2016/04/20/08/21/entrepreneur-1340649_960_720.jpg',
-    investigador: {
-      nombre: 'Michel Carmona',
-      descripcion: 'Un emprendedor',
-      profesion: 'Preogramador full stack',
-      redes1: 'twiter',
-      redes2: 'face',
-      redes3: 'linkedin',
-      redes4: 'whatssap',
-      url_imagen:
-        'https://cdn.euroinnova.edu.es/img/subidasEditor/3-1625193426-1625543620.webp',
-    },
-  },
-  {
-    src:'https://www.youtube.com/embed/Lrab91Msiho',
-    nombre: 'Paso a paso para crear startup',
-    subtitulos: 'proyeccion de ideas',
-    descripcion:
-      'Capacitacion paso a paso para desarollar una idea con las definiciones del startup',
-
-    categoria: 'Capacitación',
-    url_curso: 'https://www.youtube.com/watch?v=DAdRO6ByBoU',
-    url_imagen:
-      'https://cdn.pixabay.com/photo/2019/02/21/14/09/handshake-4011419_960_720.jpg',
-    investigador: {
-      nombre: 'Mario Sanchez',
-      descripcion: 'Un emprendedor',
-      profesion: 'Preogramador full stack',
-      redes1: 'twiter',
-      redes2: 'face',
-      redes3: 'linkedin',
-      redes4: 'whatssap',
-      url_imagen:
-        'https://www.un.org/sites/un2.un.org/files/styles/large-article-image-style-16-9/public/gi_-_racha_0.jpg?itok=Ih_EjUZb',
-    },
-  },
-]
 const PageInicio = () => {
   const [search, setSearch] = useState('')
   const [confirm, setConfirm] = useState(false)
@@ -298,6 +178,7 @@ const PageInicio = () => {
           </ul>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

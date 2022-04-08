@@ -2,6 +2,7 @@ import Menu from '../../components/element/Menu'
 import { useState } from 'react'
 import CardCursP3 from '../../components/element/CardCursP3'
 import { dataEncurso, dataFutura, dataHistorico } from '../../actions/objets'
+import Footer from '../../components/element/Footer'
 
 
 const PageInicio3 = () => {
@@ -163,7 +164,8 @@ const PageInicio3 = () => {
           </div>         
         </div>
       </section>
-
+      <Footer/>
+      
     </>
 
   )

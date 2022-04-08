@@ -98,7 +98,7 @@ const CardCursP2 = ({
                       </li>
                     </ul>
                     <div className="butunDetalle">
-                      <a className="btn btn-primary " href="#">
+                      <a className="btn btn-primary " href="https://mentorday.es/crowdfunding/?gclid=CjwKCAjwopWSBhB6EiwAjxmqDfUjVxIPxxYJ-kg6Y40saT5AmFotHtKKkGJI3hVvc1yvDOV_5SbNYBoCRHUQAvD_BwE">
                         Crowdfunding
                       </a>
                       <br />
