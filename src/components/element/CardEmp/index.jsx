@@ -9,7 +9,7 @@ const CardEmp = ({
   url_imagen,
 }) => {
   return (
-    <div className="col-lg-4">
+    <div className="col-lg-12">
       <div className="team-member">
         <img
           className="mx-auto rounded-circle"
@@ -19,7 +19,7 @@ const CardEmp = ({
         <h4>{nombre}</h4>
         <p className="text-muted">{profesion}</p>
         <p className="text-muted">{descripcion}</p>
-        <a
+        {/* <a
           className="btn btn-dark btn-social mx-2"
           href={redes1}
           aria-label="Parveen Anand Twitter Profile"
@@ -48,7 +48,7 @@ const CardEmp = ({
           aria-label="Parveen Anand whatsapp Profile"
         >
           <i className="fab fa-whatsapp"></i>
-        </a>
+        </a> */}
       </div>
     </div>
   )

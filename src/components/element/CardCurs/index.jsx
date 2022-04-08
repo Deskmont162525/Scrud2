@@ -73,9 +73,9 @@ const CardCurs = ({
                       </li>
                     </ul>
                     <div className="butunDetalle">
-                      <a className="btn btn-primary btn-xl " href="#">
+                      {/* <a className="btn btn-primary btn-xl " href="#">
                         Crowdfunding
-                      </a>
+                      </a> */}
                       <br />
                       <button
                         className="btn btn-primary"
@@ -90,13 +90,14 @@ const CardCurs = ({
                         Descarga pdf
                       </button>
                       <br />
-                      <button
-                        className="btn btn-primary "
+                      <a 
+                      href='https://www.ibser.org/gerencia-de-proyectos-digitales/'
+                        className="btn btn-primary " target="_blank"
                         type="button"
-                        onClick={showForm}
+                        // onClick={showForm}
                       >
                         !Inscríbete¡
-                      </button>
+                      </a>
                     </div>
                     {openFrom && (
                       <FormInsCursEmpren

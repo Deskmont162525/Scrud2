@@ -64,7 +64,7 @@ const dataCurso = [
     subtitulos: 'Startup',
     descripcion:
       'Aprende a poner tus ideas en marcha',
-    categoria: 'Curso de emprendimiento',
+    categoria: 'Curso de emprendimiento 2',
     url_curso: 'https://www.youtube.com/watch?v=DAdRO6ByBoU',
     url_imagen:
       'https://cdn.pixabay.com/photo/2017/02/01/09/31/arrows-2029160_960_720.png',
@@ -80,28 +80,7 @@ const dataCurso = [
         'https://www.rutanmedellin.org/images/1pruebas/foto-persona.jpg',
     },
   },
-  {
-    src:'https://www.youtube.com/embed/VeZyaqM5ugw',
-    nombre: 'Aceleracion de Empresas',
-    subtitulos: 'agregado para prueba',
-    descripcion:
-      'Aprende a poner tus ideas en marcha',
-    categoria: 'Curso de emprendimiento',
-    url_curso: 'https://www.youtube.com/watch?v=DAdRO6ByBoU',
-    url_imagen:
-      'https://cdn.pixabay.com/photo/2017/02/01/09/31/arrows-2029160_960_720.png',
-    investigador: {
-      nombre: 'Michel Carmona',
-      descripcion: 'Un emprendedor',
-      profesion: 'Preogramador full stack',
-      redes1: 'twiter',
-      redes2: 'face',
-      redes3: 'linkedin',
-      redes4: 'whatssap',
-      url_imagen:
-        'https://www.rutanmedellin.org/images/1pruebas/foto-persona.jpg',
-    },
-  },
+  
   {
     src:'https://www.youtube.com/embed/JwywjDlxtSI',
     nombre: 'Que es y como funciona el startup',
@@ -288,7 +267,7 @@ const PageInicio = () => {
         <div className="container">
           <div className="text-center">
             <h2 className="section-heading text-uppercase">
-              Ultimos Casos de Exito{' '}
+              Ultimos Casos de Exito{' '} 
             </h2>
             <h3 className="section-subheading text-muted">
               A continuación encontrarás los testimonios de nuestros

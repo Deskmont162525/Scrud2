@@ -1,44 +1,10 @@
 import { useState } from 'react'
+import { dataEmprende } from '../../../actions/objets'
 import logo from '../../../assets/img/close-icon.svg'
 import CardArbol from '../CardArbol'
 import CardEmp from '../CardEmp'
 import FormInsCurs from '../FormInsCurs'
-const dataEmprende = [
-  {
-    fecha: '2009-2011',
-    nombre: 'Emprendedor 1',
-    descripcion:
-      'Un emprendedor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.',
-    profesion: 'Preogramador full stack',
-    redes1: 'twiter',
-    redes2: 'face',
-    redes3: 'linkedin',
-    url_imagen:
-      'https://images-na.ssl-images-amazon.com/images/I/513ifiugRxL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
-  },
-  {
-    fecha: '2009-2020',
-    nombre: 'Emprendedor 2',
-    descripcion: 'Un emprendedor',
-    profesion: 'Preogramador full stack',
-    redes1: 'twiter',
-    redes2: 'face',
-    redes3: 'linkedin',
-    url_imagen:
-      'https://i.blogs.es/580ccb/cafe3/1366_2000.jpg',
-  },
-  {
-    fecha: '2009-2021',
-    nombre: 'Emprendedor 3',
-    descripcion: 'Un emprendedor',
-    profesion: 'Preogramador full stack',
-    redes1: 'twiter',
-    redes2: 'face',
-    redes3: 'linkedin',
-    url_imagen:
-      'https://img.freepik.com/foto-gratis/cafe-puede-hacerlo-mejor-hombre-negocios-tomando-cafe-antes-trabajo-hombre-barbudo-disfrutando-pausa-cafe-oficina-mi-manana-perfecta-paso-tomando-cafe_474717-16919.jpg',
-  },
-]
+
 const CardCursP3 = ({
   nombre,
   descripcion,
