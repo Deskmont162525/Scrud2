@@ -3,6 +3,7 @@ import { useState } from 'react'
 import CardCursP3 from '../../components/element/CardCursP3'
 import { dataEncurso, dataFutura, dataHistorico } from '../../actions/objets'
 import Footer from '../../components/element/Footer'
+import CardCursP4 from '../../components/element/CardCursP4'
 
 
 const PageInicio3 = () => {
@@ -57,7 +58,7 @@ const PageInicio3 = () => {
                       categoria={k?.categoria}
                       url_curso={k?.url_curso}
                       url_imagen={k?.url_imagen}
-                      id={i}
+                      id={`p${i}`}
                       idI={i}
                       nombreI={k?.investigador?.nombre}
                       descripcionI={k?.investigador?.descripcion}
@@ -101,7 +102,7 @@ const PageInicio3 = () => {
                       categoria={k?.categoria}
                       url_curso={k?.url_curso}
                       url_imagen={k?.url_imagen}
-                      id={i}
+                      id={`ep${i}`}
                       idI={i}
                       nombreI={k?.investigador?.nombre}
                       descripcionI={k?.investigador?.descripcion}
@@ -137,7 +138,7 @@ const PageInicio3 = () => {
               filterState2()?.map((k, i) => {
                 return (
                   <>
-                    <CardCursP3
+                    <CardCursP4
                       key={i}
                       nombre={k?.nombre}
                       descripcion={k?.descripcion}
@@ -146,16 +147,9 @@ const PageInicio3 = () => {
                       categoria={k?.categoria}
                       url_curso={k?.url_curso}
                       url_imagen={k?.url_imagen}
-                      id={i}
-                      idI={i}
-                      nombreI={k?.investigador?.nombre}
-                      descripcionI={k?.investigador?.descripcion}
-                      profesionI={k?.investigador?.profesion}
-                      redes1I={k?.investigador?.redes1}
-                      redes2I={k?.investigador?.redes2}
-                      redes3I={k?.investigador?.redes3}
-                      url_imagenI={k?.investigador?.url_imagen}
+                      id={`f${i}`}
                       src={k.src}
+                      inscripcion={k?.inscripcion}
                     />
                   </>
                 )

@@ -2,6 +2,10 @@ const Footer = () => {
   return (
     <footer className="footer py-4">
       <div className="container">
+      <div className="col-lg-12 ">
+            <h1>Comunicate con nosotros </h1>
+          </div>
+          <br />
         <div className="row align-items-center">
           <div className="col-lg-4 text-lg-start">
             © 2020 IBSER | Todos los derechos reservados
@@ -30,7 +34,6 @@ const Footer = () => {
             </a>
             <a
               className="btn btn-dark btn-social mx-2"
-            //   https://api.whatsapp.com/send/?phone=&text&app_absent=0
               href={`https://api.whatsapp.com/send?phone=+573118721109&text=hola,%20me%20contacto%20contigo%20por%20medio%20del%20aplicativo%20web?`}
               target="_blank"
               aria-label="Parveen Anand whatsapp Profile"

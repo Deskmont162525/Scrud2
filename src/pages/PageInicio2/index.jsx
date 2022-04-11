@@ -124,6 +124,7 @@ const PageInicio2 = () => {
                       redes3I={k?.investigador?.redes3}
                       redes4I={k?.investigador?.redes4}
                       url_imagenI={k?.investigador?.url_imagen}
+                      inscripcion={k?.inscripcion}
                       src={k.src}
                     />
                   </>

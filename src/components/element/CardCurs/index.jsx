@@ -17,6 +17,7 @@ const CardCurs = ({
   stateFrom,
   inputFile,
   src,
+  inscripcion1,
 }) => {
   return (
     <>
@@ -60,7 +61,15 @@ const CardCurs = ({
                   <div className="modal-body">
                     <h2 className="text-uppercase">{nombre}</h2>
                     <p className="item-intro text-muted">{subtitulos}</p>
-                    <iframe width="560" height="315" src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src={src}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
                     <p>{descripcion}</p>
                     <ul className="list-inline">
                       <li>
@@ -73,11 +82,23 @@ const CardCurs = ({
                       </li>
                     </ul>
                     <div className="butunDetalle">
-                      {/* <a className="btn btn-primary btn-xl " href="#">
-                        Crowdfunding
-                      </a> */}
+                      {inscripcion1 === 'inscripcion' && (
+                        <a
+                          href="https://www.ibser.org/gerencia-de-proyectos-digitales/"
+                          className="btn btn-primary "
+                          target="_blank"
+                          type="button"
+                          // onClick={showForm}
+                        >
+                          !Inscríbete¡
+                        </a>
+                      )}
                       <br />
-                      <button
+                      <button className="btn btn-primary " type="button">
+                        Descarga pdf
+                      </button>
+                      <br />
+                       <button
                         className="btn btn-primary"
                         data-bs-dismiss="modal"
                         type="button"
@@ -86,18 +107,6 @@ const CardCurs = ({
                         Close Startup
                       </button>
                       <br />
-                      <button className="btn btn-primary " type="button">
-                        Descarga pdf
-                      </button>
-                      <br />
-                      <a 
-                      href='https://www.ibser.org/gerencia-de-proyectos-digitales/'
-                        className="btn btn-primary " target="_blank"
-                        type="button"
-                        // onClick={showForm}
-                      >
-                        !Inscríbete¡
-                      </a>
                     </div>
                     {openFrom && (
                       <FormInsCursEmpren
@@ -107,11 +116,10 @@ const CardCurs = ({
                         error={error}
                         inputFile={inputFile}
                       />
-                      
                     )}
                     {confirm && (
                       <div className="portfolio-caption">
-                        <br/>
+                        <br />
                         <div className="portfolio-caption-heading">
                           REGISTRO CORRECTO
                         </div>

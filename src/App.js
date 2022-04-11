@@ -1,11 +1,9 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import React from 'react'
 import './App.css'
 import './assets/css/stylesGlobal.css'
 import PageAdmin from './pages/Admin'
 import PageInicio from './pages/PageInicio'
-import { getAllLeads } from './actions/gettAll'
 import PageInicio2 from './pages/PageInicio2'
 import PageInicio3 from './pages/PageInicio3'
 

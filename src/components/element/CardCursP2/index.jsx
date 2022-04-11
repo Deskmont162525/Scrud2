@@ -19,6 +19,7 @@ const CardCursP2 = ({
   redes4I,
   url_imagenI,
   src,
+  inscripcion,
 }) => {
   const [openFrom, setOpenForm] = useState(false)
   const showForm = () => setOpenForm(!openFrom)
@@ -81,7 +82,15 @@ const CardCursP2 = ({
                   <div className="modal-body">
                     <h2 className="text-uppercase">{nombre}</h2>
                     <p className="item-intro text-muted">{subtitulos}</p>
-                    <iframe width="560" height="315" src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src={src}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
                     <p>{descripcion}</p>
                     <ul className="list-inline">
                       <li>
@@ -98,12 +107,27 @@ const CardCursP2 = ({
                       </li>
                     </ul>
                     <div className="butunDetalle">
-                      <a className="btn btn-primary " href="https://mentorday.es/crowdfunding/?gclid=CjwKCAjwopWSBhB6EiwAjxmqDfUjVxIPxxYJ-kg6Y40saT5AmFotHtKKkGJI3hVvc1yvDOV_5SbNYBoCRHUQAvD_BwE">
+                     
+                      {inscripcion === 'inscripcion' && (
+                        <a
+                          href="https://www.ibser.org/investigacion-y-desarrollo-de-productos/"
+                          className="btn btn-primary "
+                          target="_blank"
+                          type="button"
+                          // onClick={showForm}
+                        >
+                          !Inscríbete¡
+                        </a>
+                      )}
+                       <br />
+                      <a
+                        className="btn btn-primary "
+                        href="https://mentorday.es/crowdfunding/?gclid=CjwKCAjwopWSBhB6EiwAjxmqDfUjVxIPxxYJ-kg6Y40saT5AmFotHtKKkGJI3hVvc1yvDOV_5SbNYBoCRHUQAvD_BwE"
+                      >
                         Crowdfunding
                       </a>
                       <br />
                       <button className="btn btn-primary " type="button">
-                        <i className="fas fa-xmark me-1"></i>
                         Descarga pdf
                       </button>
                       <br />
